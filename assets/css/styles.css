@@ -130,7 +130,7 @@ input{
     padding: 4.5rem 0 2.5rem;
 }
 
-.section_title{
+.section__title{
     font-size: var(--h2-font-size);
     color: var(--title-color);
     text-align: center;
@@ -397,6 +397,19 @@ input{
 }
 
 /*=============== DISCOVER ===============*/
+.disover__card{
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+
+}
+
+discover__data{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+
+}
 
 /*=============== EXPERIENCE ===============*/
 
