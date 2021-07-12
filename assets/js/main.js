@@ -73,5 +73,12 @@ function playPause(){
         videoIcon.classList.remove('ri-pause-line')
     }
 }
-
 videoButton.addEventListener('click', playPause);
+
+function finalVideo(){
+    //The video has ended at this point
+    videoIcon.classList.remove('ri-pause-line');
+    videoIcon.classList.remove('ri-play-line');
+}
+//ended when the video file ends
+videoFile.addEventListener('ended', finalVideo)
