@@ -64,6 +64,14 @@ function playPause(){
         videoIcon.classList.add('ri-pause-line')
         videoIcon.classList.remove('ri-play-line')
     }
+    else{
+        //Pause the video
+        videoFile.pause()
+
+        //We change the icon
+        videoIcon.classList.add('ri-play-line')
+        videoIcon.classList.remove('ri-pause-line')
+    }
 }
 
 videoButton.addEventListener('click', playPause);
