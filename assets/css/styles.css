@@ -239,6 +239,20 @@ input{
     color: var(--title-color);
 }
 
+/* Active link */
+.active-link{
+    position: relative;
+    color: var(--title-color);
+}
+
+.active-link::before{
+    content: '';
+    position: absolute;
+    background-color: var(--title-color);
+    width: 100%;
+    height: 2px;
+}
+
 /*=============== HOME ===============*/
 .home__img{
     position: absolute;
@@ -497,7 +511,6 @@ background-image: none;
     text-align: center;
     margin-bottom: var(--mb-2-5);
 }
-<<<<<<< HEAD
 
 .video__content{
     position: relative;
@@ -513,8 +526,6 @@ background-image: none;
 .video__button-icon{
     font-size: 1.2rem;
 }
-=======
->>>>>>> Video
 
 .video__content{
     position: relative;
@@ -730,7 +741,7 @@ background-image: none;
 .scrollup{
     position: fixed;
     right: 1rem;
-    bottom: 5rem;
+    bottom: -20%;
     background-color: var(--first-color);
     padding: .5rem;
     display: flex;
@@ -741,6 +752,16 @@ background-image: none;
 
 .scrollup__icon{
     color: var(--white-color);
+}
+
+.scrollup:hover{
+   background-color: var(--first-color-alt);
+    opacity: 1;
+}
+
+/* Show scroll */
+.show-scroll{
+    bottom: 5rem;
 }
 
 /*=============== SCROLL BAR ===============*/

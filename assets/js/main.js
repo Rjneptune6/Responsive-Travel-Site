@@ -82,3 +82,32 @@ function finalVideo(){
 }
 //ended when the video file ends
 videoFile.addEventListener('ended', finalVideo)
+
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+
+    if(this.scrollY >= 200) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+}
+
+window.addEventListener('scroll', scrollUp)
+
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+var sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(currSection => {
+        const sectionHeight = currSection.offsetHeight
+        const sectionTop = currSection.offsetTop - 50;
+        sectionId = currSection.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
