@@ -1038,7 +1038,7 @@ input {
     body {
         margin: 0;
     }
-    .home__container, .home__img {
-        height: 640px;
-    }
+    /*.home__container, .home__img {*/
+    /*    height: 640px;*/
+    /*}*/
 }

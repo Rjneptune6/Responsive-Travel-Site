@@ -142,25 +142,31 @@ themeButton.addEventListener('click', () => {
 })
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-// var sr = ScrollReveal({
-//     distance: '60px',
-//     duration: 2800,
-// })
-//
-// sr.reveal(`.home__data, .home__social-link, .home__info,
-//             .discover__container,
-//             .experience__data, .experience__overlay,
-//             .place__card,
-//             .sponsor__content,
-//             .footer__data, .footer__rights`, {
-//             origin: 'top',
-//             interval: 100,
-// })
-//
-// sr.reveal(`.about__data,
-// .video__description,
-// .subscribe__description`, {
-//     origin: 'left',
-// })
+var sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+})
+
+sr.reveal(`.home__data, .home__social-link, .home__info,
+            .discover__container,
+            .experience__data, .experience__overlay,
+            .place__card,
+            .sponsor__content,
+            .footer__data, .footer__rights`, {
+            origin: 'top',
+            interval: 100,
+})
+
+sr.reveal(`.about__data,
+.video__description,
+.subscribe__description`, {
+    origin: 'left',
+})
+
+sr.reveal(`.about__img-overlay`,
+    {
+        origin: 'right',
+        interval: 100,
+    })
 
 
